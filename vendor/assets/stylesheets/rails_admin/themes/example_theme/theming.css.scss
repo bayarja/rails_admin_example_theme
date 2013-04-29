@@ -1,4 +1,80 @@
 /* All real theming should happen here */
 body {
-  background-color:$background-color;
+  form{
+    fieldset{
+      legend{
+        font-size:13px;
+        font-weight:bold;
+      }
+      .string_type, .decimal_type, .boolean_type, .integer_type, .float_type, .enum_type, .carrierwave_type, .password_type, .datetime_type{
+        float:left;
+        width:50%;
+        height:70px;
+        .tab-content{
+        }
+        .control-label{
+          float:left;
+          width:30% !important;
+        }
+        .controls{
+          float:left;
+          width:68%;
+          margin-left:0px;
+          padding-top:5px;
+          input{
+            margin-left:20px;
+            float:left;
+            width:80%;
+          }
+          input[type="checkbox"]{
+            width:auto;
+            margin-top:3px;
+          }
+          select{
+            float:right;
+          }
+          .input-append{
+            input{
+              float:none !important;
+              display:inline-block !important;
+              width:auto !important;
+            }
+            label{
+            }
+          }
+          p.help-block{
+            display:block;
+            padding-left:20px;
+          }
+        }
+        input{
+          width:80%;
+        }
+      }
+      .text_type{
+        float:left;
+        width:100%;
+      }
+      .carrierwave_type{
+        float:left;
+        width:50%;
+      }
+      .has_many_association_type{
+        float:left;
+        width:100%;
+      }
+      .boolean_type{
+        float:left;
+        width:24% !important;
+        .control-label{
+          float:left;
+          width:50% !important;
+        }
+        .controls{
+          width:30%;
+        }
+      }
+    }
+  }
 }
+
