@@ -9,7 +9,7 @@ body {
       .string_type, .decimal_type, .boolean_type, .integer_type, .float_type, .enum_type, .carrierwave_type, .password_type, .datetime_type{
         float:left;
         width:50%;
-        height:50px;
+        min-height:50px;
         .tab-content{
         }
         .control-label{
